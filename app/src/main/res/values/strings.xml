@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YTS</string>
+    <string name="no_internet">You have some connection problems or maybe\n\n you forgot and turned your wifi off</string>
+    <string name="no_data">Can\'t find movies now !!</string>
+    <string name="no_search">I can\'t find the movie if you don\'t know it\'s name</string>
+    <string name="add_id">ca-app-pub-4512449787648074~6156396159</string>
+</resources>

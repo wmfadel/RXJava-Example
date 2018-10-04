@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/list_item_selector">
+
+            <ImageView
+                android:id="@+id/mnu_list_cover"
+                android:layout_width="115dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mnu_txt_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="name"
+                android:textColor="#000"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mnu_list_cover"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mnu_txt_r_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="rate"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mnu_list_cover"
+                app:layout_constraintStart_toEndOf="@+id/mnu_list_cover"
+                app:layout_constraintTop_toBottomOf="@+id/mnu_txt_l_holder"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mnu_txt_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="41dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="5.0"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/mnu_txt_r_holder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mnu_txt_r_holder" />
+
+            <TextView
+                android:id="@+id/mnu_txt_l_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="language"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/mnu_list_cover"
+                app:layout_constraintTop_toBottomOf="@+id/mnu_txt_g_holder" />
+
+            <TextView
+                android:id="@+id/mnu_txt_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="english"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/mnu_txt_l_holder"
+                app:layout_constraintStart_toEndOf="@+id/mnu_txt_l_holder" />
+
+            <TextView
+                android:id="@+id/mnu_txt_g_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="96dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="genres"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/mnu_list_cover"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mnu_txt_genres"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="action"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/mnu_txt_g_holder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mnu_txt_g_holder" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
